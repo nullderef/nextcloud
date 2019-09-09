@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.11
 
 LABEL org.label-schema.vcs-url="https://github.com/nullderef/nextcloud"
 
