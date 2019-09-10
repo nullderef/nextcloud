@@ -9,12 +9,12 @@ CMD [ "/sbin/my_init" ]
 
 RUN apt-get update -y
 
-RUN apt-get install -y apache2 mariadb-server libapache2-mod-php7.1 \
-    php7.1-gd php7.1-json php7.1-mysql php7.1-curl \
-    php7.1-intl php7.1-mcrypt php-imagick \
-    php7.1-zip php7.1-xml php7.1-mbstring \ 
+RUN apt-get install -y apache2 mariadb-server libapache2-mod-php \
+    php-gd php-json php-mysql php-curl \
+    php-intl php-mcrypt php-imagick \
+    php-zip php-xml php-mbstring \ 
     php-apcu php-redis redis-server \ 
-    php7.1-ldap php-smbclient unzip \
+    php-ldap php-smbclient unzip \
     wget bzip2
 
 COPY data/default.conf /etc/apache2/sites-available/
