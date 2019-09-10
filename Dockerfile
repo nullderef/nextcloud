@@ -11,7 +11,7 @@ RUN apt-get update -y
 
 RUN apt-get install -y apache2 mariadb-server libapache2-mod-php \
     php-gd php-json php-mysql php-curl \
-    php-intl php-mcrypt php-imagick \
+    php-intl php-imagick \
     php-zip php-xml php-mbstring \ 
     php-apcu php-redis redis-server \ 
     php-ldap php-smbclient unzip \
