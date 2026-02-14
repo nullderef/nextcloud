@@ -1,8 +1,8 @@
-FROM phusion/baseimage:0.11
+FROM phusion/baseimage:noble-1.0.2
 
 LABEL org.label-schema.vcs-url="https://github.com/nullderef/nextcloud"
 
-ENV NEXTCLOUD_FILE=nextcloud-18.0.3.zip
+ENV NEXTCLOUD_FILE=nextcloud-32.0.6.zip
 
 # Use baseimage-docker's init system.
 CMD [ "/sbin/my_init" ]
